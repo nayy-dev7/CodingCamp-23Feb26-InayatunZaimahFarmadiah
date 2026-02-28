@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NexaTech Solutions</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">NexaTech Solutions</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="profile.html">Our Profile</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Banner -->
+<section class="hero-banner d-flex align-items-center text-white">
+  <div class="container text-center">
+    <h1 class="fw-bold">
+      Hi <span id="username">Name</span>, Welcome To NexaTech Solutions
+    </h1>
+    <p class="lead">Empowering Digital Innovation for a Better Future</p>
+  </div>
+</section>
+
+<!-- Headquarter -->
+<section class="py-5">
+  <div class="container text-center">
+    <h2 class="mb-4">Our Headquarter</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="hq-circle jkt">Jakarta</div>
+      </div>
+      <div class="col-md-4">
+        <div class="hq-circle bdg">Bandung</div>
+      </div>
+      <div class="col-md-4">
+        <div class="hq-circle sby">Surabaya</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Message Us -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="mb-4 text-center">Message Us</h2>
+    <div class="row">
+      
+      <!-- Form -->
+      <div class="col-md-6">
+        <form onsubmit="return validateForm()">
+          <div class="mb-3">
+            <label class="form-label">Nama</label>
+            <input type="text" id="nama" class="form-control">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Tanggal Lahir</label>
+            <input type="date" id="tanggal" class="form-control">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Jenis Kelamin</label><br>
+            <input type="radio" name="gender" value="Laki-Laki"> Laki-Laki
+            <input type="radio" name="gender" value="Perempuan" class="ms-3"> Perempuan
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Pesan</label>
+            <textarea id="pesan" class="form-control"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100">Submit</button>
+        </form>
+      </div>
+
+      <!-- Result -->
+      <div class="col-md-6">
+        <div class="card shadow-sm">
+          <div class="card-body" id="result">
+            <p class="text-muted">Silakan isi form untuk mengirim pesan.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="bg-primary text-white text-center py-3">
+  © 2026 NexaTech Solutions. All Rights Reserved.
+</footer>
+
+<script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
